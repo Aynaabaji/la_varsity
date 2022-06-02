@@ -1,0 +1,12 @@
+.blog{
+    background: url('../../../assets/background.jpg') no-repeat center;
+    background-size: cover;
+    padding: 9rem 0;
+    background-color: var(--blk2);
+    background-blend-mode: multiply;
+}
+
+.blog_ban{
+    text-align: center;
+    color: var(--white);
+}

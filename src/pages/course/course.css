@@ -1,0 +1,9 @@
+.course{
+    background: url('../../assets/background.jpg') no-repeat center;
+    background-size: cover;
+    padding: 10rem 0;
+    background-color: var(--blk2);
+    background-blend-mode: multiply;
+    text-align: center;
+    color: var(--white);
+}

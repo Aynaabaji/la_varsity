@@ -1,0 +1,20 @@
+.enroll_container{
+    margin: 4rem 0;
+}
+
+
+.endiv{
+    background: url('../../../assets/banner2.jpg') no-repeat center;
+    background-size: cover;
+    padding: 4rem 0;
+    background-color: var(--blk2);
+    background-blend-mode: multiply;
+    text-align: center;
+    color: var(--white);
+}
+
+.endiv a{
+    display: inline-block;
+    color: var(--white);
+    margin-top: 1rem;
+}

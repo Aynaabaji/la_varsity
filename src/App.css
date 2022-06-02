@@ -1,38 +1,196 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+:root{
+    --primary:rgb(255, 68, 0);
+    --primary-trans:rgba(212, 0, 0, 0.621);
+    --secondary:rgb(255, 111, 0);
+    --primary-back:rgba(255, 169, 191, 0.301);
+    --white:#fff;
+    --blk:#000;
+    --blk2:rgba(1, 0, 53, 0.629);
+    --blk3:rgb(228, 227, 255);
+
+    --container:80%;
+    --container-lg:83%;
+    --container-md:85%;
+    --container-sm:90%;
+
+    --transition:all 0.6s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.container{
+    width: var(--container);
+    margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.link_color{
+    color: var(--white);
 }
 
-.App-link {
-  color: #61dafb;
+img{
+    width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn{
+    background: transparent;
+    border: 1px solid var(--white);
+    padding: 0.5rem 1.5rem;
+    margin-top: 0.5rem;
 }
+.btn-rev{
+    background: transparent;
+    border: 1px solid var(--primary);
+    padding: 0.5rem 1.5rem;
+    margin-top: 0.5rem;
+}
+
+
+
+.btn-primary{
+    position: relative;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.btn-primary-rev{
+    position: relative;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+
+.btn-primary:hover{
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    
+}
+
+.btn-primary-rev:hover{
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    color: var(--white);
+    
+}
+
+
+
+.btn-primary::before{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 30px;
+    background: var(--white);
+    top: 50%;
+    left: -15px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.btn-primary-rev::before{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 30px;
+    background: var(--primary);
+    top: 50%;
+    left: -15px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.btn-primary::after{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 30px;
+    background: var(--white);
+    top: 50%;
+    right: -15px;
+    transition: var(--transition);
+}
+.btn-primary-rev::after{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 30px;
+    background: var(--primary);
+    top: 50%;
+    right: -15px;
+    transition: var(--transition);
+}
+
+
+
+.btn-primary:hover::before{
+    background: var(--primary);
+}
+
+.btn-primary:hover::after{
+    background: var(--primary);
+}
+
+.btn-primary-rev:hover::before{
+    background: var(--primary);
+}
+
+.btn-primary-rev:hover::after{
+    background: var(--primary);
+}
+
+
+
+@media screen and (max-width:1200px){
+    .container{
+        width: var(--container-lg);
+    }
+}
+
+
+
+@media screen and (max-width:991px){
+    .container{
+        width: var(--container-lg);
+    }
+}
+
+
+
+@media screen and (max-width:678px){
+    .container{
+        width: var(--container-md);
+    }
+
+}
+
+
+
+@media screen and (max-width:420px){
+    .container{
+        width: var(--container-sm);
+    }
+}
+
+

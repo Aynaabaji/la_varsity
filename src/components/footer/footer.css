@@ -1,0 +1,25 @@
+footer{
+        padding-bottom: 1rem;
+}
+
+.footer-links{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem 0;
+}
+
+.footer-links>a{
+        color: var(--primary);
+}
+
+
+.footer-text{
+        text-align: center;
+        font-weight: 200;
+}
+
+.footer-text>a{
+        color: var(--blk);
+        font-weight: 200;
+}

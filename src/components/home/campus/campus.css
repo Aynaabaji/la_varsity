@@ -1,0 +1,73 @@
+.campus_heading{
+    text-align: center;
+}
+
+.campus_content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 4rem 0;
+}
+
+.cam_cont{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    
+}
+
+.cam_cont>img{
+    height: 100%;
+}
+
+.camp_overlay{
+    position: absolute;
+    bottom: 0;
+    background: var(--primary-trans);
+    width: 100%;
+    height: 0%;
+    z-index: 99;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    overflow: hidden;
+}
+
+.camp_overlay h3{
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.cam_cont:hover .camp_overlay{
+    height: 100%;
+}
+
+
+
+/* media query starts */
+
+
+
+@media screen and (max-width:420px){
+    .campus_content{
+        gap: 1rem;
+    }
+}
